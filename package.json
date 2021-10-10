@@ -1,0 +1,25 @@
+{
+  "name": "ff14-party-helper-lib",
+  "version": "0.0.1",
+  "author": "Randel",
+  "license": "Copyright 2021 Randel. All right reserved",
+  "scripts": {
+    "start:dev": "nodemon -w ./src --ext ts,js,tsx --exec 'npm run build:local'",
+    "build": "tsc",
+    "build:local": "npm run build && npm run build:local:cp",
+    "build:local:cp": "npm run build:local:cp:ff14-party-helper",
+    "build:local:cp:ff14-party-helper": "npm run build:local:cp:ff14-party-helper:fe && npm run build:local:cp:ff14-party-helper:be",
+    "build:local:cp:ff14-party-helper:fe": "cp -R ./dist ../fe/node_modules/ff14-party-helper-lib && find ../fe/node_modules/ff14-party-helper-lib/dist -exec touch {} \\;",
+    "build:local:cp:ff14-party-helper:be": "cp -R ./dist ../be/node_modules/ff14-party-helper-lib"
+  },
+  "devDependencies": {
+    "@coralblack/flax": "^0.1.6",
+    "@reduxjs/toolkit": "^1.6.1",
+    "@types/node": "^14.17.7",
+    "@types/react": "^17.0.15",
+    "eslint-plugin-import": "^2.23.4",
+    "gts": "^3.1.0",
+    "nodemon": "^2.0.12",
+    "typescript": "^4.3.5"
+  }
+}
