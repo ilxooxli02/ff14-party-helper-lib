@@ -9,8 +9,8 @@
     "build:local": "npm run build && npm run build:local:cp",
     "build:local:cp": "npm run build:local:cp:ff14-party-helper",
     "build:local:cp:ff14-party-helper": "npm run build:local:cp:ff14-party-helper:fe && npm run build:local:cp:ff14-party-helper:be",
-    "build:local:cp:ff14-party-helper:fe": "cp -R ./dist ../fe/node_modules/ff14-party-helper-lib && find ../fe/node_modules/ff14-party-helper-lib/dist -exec touch {} \\;",
-    "build:local:cp:ff14-party-helper:be": "cp -R ./dist ../be/node_modules/ff14-party-helper-lib"
+    "build:local:cp:ff14-party-helper:fe": "cp -R ./dist ../ff14-party-helper/fe/node_modules/ff14-party-helper-lib && find ../ff14-party-helper/fe/node_modules/ff14-party-helper-lib/dist -exec touch {} \\;",
+    "build:local:cp:ff14-party-helper:be": "cp -R ./dist ../ff14-party-helper/be/node_modules/ff14-party-helper-lib"
   },
   "devDependencies": {
     "@coralblack/flax": "^0.1.6",
