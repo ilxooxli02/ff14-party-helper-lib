@@ -16,3 +16,18 @@ export enum Duty {
   Eureka = "Eureka",
   Etc = "Etc"
 }
+
+export const Duties = {
+  [Duty.ALL]: {
+    // ..
+  },
+  [Duty.Roulette]: {
+
+  },
+  [Duty.Dungeon]: {
+    Paglthan: {
+      ko: "파글단",
+      en: "Paglth'an"
+    }
+  }
+}

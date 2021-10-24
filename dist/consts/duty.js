@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Duty = void 0;
+exports.Duties = exports.Duty = void 0;
 var Duty;
 (function (Duty) {
     Duty["ALL"] = "ALL";
@@ -20,4 +20,16 @@ var Duty;
     Duty["Eureka"] = "Eureka";
     Duty["Etc"] = "Etc";
 })(Duty = exports.Duty || (exports.Duty = {}));
+exports.Duties = {
+    [Duty.ALL]: {
+    // ..
+    },
+    [Duty.Roulette]: {},
+    [Duty.Dungeon]: {
+        Paglthan: {
+            ko: "파글단",
+            en: "Paglth'an"
+        }
+    }
+};
 //# sourceMappingURL=duty.js.map

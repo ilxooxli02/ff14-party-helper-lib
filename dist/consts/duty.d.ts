@@ -16,3 +16,13 @@ export declare enum Duty {
     Eureka = "Eureka",
     Etc = "Etc"
 }
+export declare const Duties: {
+    ALL: {};
+    Roulette: {};
+    Dungeon: {
+        Paglthan: {
+            ko: string;
+            en: string;
+        };
+    };
+};
